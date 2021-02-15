@@ -1,0 +1,149 @@
+h1 {
+  font-family: Footlight MT Light;
+  font-size:43px;
+  color: white;
+  padding-left:7px;
+}
+
+body {
+	background-color:#002152;
+	/* padding-left:100px;
+	padding-right:100px;*/
+	/* padding-top: -10px; */
+	/*padding-bottom:40px; */
+	margin: 0px;
+	font-family: Trebuchet MS,Helvetica Neu,Helvetica, Arial, sans-serif;
+	background-image: url(faq5.jpg);
+	background-size: cover;
+	
+	
+}
+
+p {
+	font-family: Trebuchet MS,Helvetica Neu,Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	margin-left: 0px;
+}
+
+ol {
+	font-size: 17px;
+	font-family: Trebuchet MS,Helvetica Neu,Helvetica, Arial, sans-serif;
+}
+
+/*Main Accordian*/
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 70%;
+	border: solid;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border-radius: 10px;
+	border: solid 1px Black;
+	font-family: Trebuchet MS,Helvetica Neu,Helvetica, Arial, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 260px;
+}
+
+.active, .accordion:hover {
+  background-color: #72A1F1;
+
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 12px; 
+  width: 70%;
+  margin-left: 16%;
+  border: 1px solid black ;
+}
+
+
+/*sub accordian*/
+.accordion2 {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 5px;
+	width: 90%;
+	border: solid;
+	/* text-align: left; */
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border-radius: 10px;
+	border: solid 1px Black;
+	font-family: Trebuchet MS,Helvetica Neu,Helvetica, Arial, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 47px;
+}
+
+.active, .accordion2:hover {
+	background-color: #72A1F1;
+  
+  }
+  
+  .panel2 {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 12px;
+	margin-bottom: 10px; 
+  }
+
+
+  
+.footer {
+	background-color:#2a2b2b;
+	padding: 15px;
+	text-align: center;
+	position: relative;
+	left: 0;
+    bottom: 0;
+    width: 97.5%;
+    color: white;
+    text-align: center;
+	margin-top: 8%;
+  }
+
+
+
+
+  /*Navigation bar styles*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0086bf;
+}
+
+li {
+  float: left;
+}
+
+/*li:last-child {
+  border-right: none;
+}*/
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #adadad;
+}
