@@ -43,6 +43,7 @@ session_start(); ?>
       <?php
         if(isset($_SESSION["uname"])){
           $uname=$_SESSION["uname"];
+
           $getrid = "SELECT RID FROM rider_det WHERE Runame='$uname'";
           $result1 = mysqli_query($conn, $getrid);
           $row = mysqli_fetch_array($result1);
@@ -98,7 +99,7 @@ session_start(); ?>
           $result = mysqli_query($conn, $sql);
           if (mysqli_num_rows($result) > 0) {
 
-            echo '<script> document.getElementById("RenterFixRide").disabled = true;;</script>';
+            echo '<script> document.getElementById("RenterFixRide").disabled = true;</script>';
              
         }
      }

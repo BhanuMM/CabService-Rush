@@ -62,7 +62,7 @@ while($row2 = mysqli_fetch_array($result1)){
      $Vid = $row2['VID'];}
 
 //insert to availbility table
-$sql4 = "INSERT INTO v_available (VID,DID,V_avail,vtype,book_date) VALUES('$Vid','$Did', 'YES', '$vtype','')";
+$sql4 = "INSERT INTO v_available (VID,DID,V_avail,vtype,book_date) VALUES('$Vid','$Did', 'YES', '$vtype','$date')";
 
 if (mysqli_query($conn, $sql4)) {
   // echo "New record successfully";

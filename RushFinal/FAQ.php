@@ -22,8 +22,9 @@
 <center>
 <h1>Guide</h1> </center>
 
-<button class="accordion"><h3>Fixing A ride.</h3></button>
-<div class="panel">
+<div class="accordion">
+<h3>Fixing A ride.</h3></div>
+<div class="align">
   <p>When fixing a ride, you can always check the avilability status of the vehicles with us, 
 without registering. <br /> <br /> <b>Home -> Check availability</b><br /> <br />To book a ride you have to be registered first. </p>
 <p>To register, 
@@ -39,8 +40,8 @@ without registering. <br /> <br /> <b>Home -> Check availability</b><br /> <br /
 <p>You can change your user account settings by clicking the Account Settings button.</p>
 </div>
 
-<button class="accordion"><h3>Registering as a driver.</h3></button>
-<div class="panel">
+<div class="accordion"><h3>Registering as a driver.</h3></div>
+<div class="align">
   <p>Rush offers this chance to join with our network and earn. To register as a driver follow the instructions.</p>
 <p>To register, 
 	<ol>
@@ -56,61 +57,26 @@ without registering. <br /> <br /> <b>Home -> Check availability</b><br /> <br /
 <p>You can change your user account settings by clicking the Account Settings button.</p>
 </div>
 
-<button class="accordion"><h3>FAQ<h3></button>
-<div class="panel">
-	<button class="accordion2"><h3>How to contact Us in an emergency.</h3></button>
-	<div class="panel2">
+<div class="accordion"><h3>FAQ<h3></div>
+<div class="align">
+	<div class="accordion2"><h3>How to contact Us in an emergency.</h3></div>
+	<div class="align2">
 	<p style="margin-left: 0%;">In our Home page we have displayed our office contact numbers.
 	You can find our hotline at the bottom of each page, including this.</p>
 	</div>
-	<button class="accordion2"><h3>Who can view my profile.</h3></button>
-	<div class="panel2">
+	<div class="accordion2"><h3>Who can view my profile.</h3></div>
+	<div class="align2">
 	<p>Unless requested with a court order, only the user can view most of account details.</p>
 	<p>According to the necessity, Admin can view the contact number and address. </p>
 	<p>Your rider can see your User Name.</p>
 	</div>
-	<button class="accordion2"><h3>What is Rush.</h3></button>
-	<div class="panel2">
+	<div class="accordion2"><h3>What is Rush.</h3></div>
+	<div class="align2">
 	<p>Rush is a upcoming vehicle renting service that provide service 24/7. We assure you about the safety and credibility of our riders and 
 		always takes your safety as our highest responsibility and concern.
 	</p>
     </div>
 </div>
-
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-
-<script>
-	var acc = document.getElementsByClassName("accordion2");
-	var i;
-	
-	for (i = 0; i < acc.length; i++) {
-	  acc[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var panel2 = this.nextElementSibling;
-		if (panel2.style.display === "block") {
-		  panel2.style.display = "none";
-		} else {
-		  panel2.style.display = "block";
-		}
-	  });
-	}
-	</script>
 
 
 <div class="footer">

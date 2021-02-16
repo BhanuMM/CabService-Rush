@@ -8,7 +8,7 @@
 	<div>
 		<ul>
 			
-			<li style="float:right"><a href="../FAQ.php">Guide</a></li>   			
+			<li style="float:right"><a href="./FAQ.php">Guide</a></li>   			
 			<li style="float:right"><a href="./index.php#B3">Contact Us</a></li>
 			<li style="float:right"><a href="./index.php">Home</a></li>
 			<li style="float:left"><img src="./img/rushlogo2.png" alt="logo" height="7%"></li>

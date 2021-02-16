@@ -33,25 +33,22 @@ include "./conn.php"; ?>
 			<table id="al">
 			<tr><td>
 			<p style="text-align: center;">
-				<form action="check_available.php">
-					  <label>Select Date:</label></td><td>
+				<form method="post" action="check_available.php">
 					  
-					  <input type="date" required>
-					</td></tr><tr><td>
-				<br /><br /><br />
-					<label>Select Vehicle:</label></td><td>
-					<br /><br /><br />
-				  <select id="vtype" name="vtype" style="width:112%;">
-				  <option value="Car">Car</option>
-					    <option value="Bicycle">Bicycle</option>
-					    <option value="Three-wheeler">Three-wheeler</option>
+					<label>Select Vehicle:</label></td>
+					<td>
+					<br>
+				  <select id="vtype" name="vtype" style="width:112%; height:40px;" value="<?php if (isset($_POST['vtype'])) echo $_POST['vtype']; ?>">
+				  <option value="Car" <?php echo (isset($_POST['vtype']) && $_POST['vtype'] == 'Car') ? 'selected' : ''; ?>>Car</option>
+					    <option value="Bicycle"  <?php echo (isset($_POST['vtype']) && $_POST['vtype'] == 'Bicycle') ? 'selected' : ''; ?>>Bicycle</option>
+					    <option value="Three-wheeler" <?php echo (isset($_POST['vtype']) && $_POST['vtype'] == 'Three-wheeler') ? 'selected' : ''; ?>>Three-wheeler</option>
 					    
-					    <option value="Van">Van</option>
+					    <option value="Van" <?php echo (isset($_POST['vtype']) && $_POST['vtype'] == 'Van') ? 'selected' : ''; ?>>Van</option>
 				  </select>
 				</div>
 				</td></tr><tr><td></td><td><br />
 				
-				<input type="submit" href="check_available.php?vtype1=<?php $_GET['vtype']?>" name="submit" Value="Check" style="padding-top:10px;">
+				<input type="submit" name="submit" Value="Check" style="padding-top:10px;">
 				
 				</form>
 				</td></tr>
@@ -62,10 +59,10 @@ include "./conn.php"; ?>
 		
 		<?php
 		
-		if(isset($_REQUEST['vtype']))
+		if(isset($_POST['vtype']))
 		{
-			$vtype = $_REQUEST['vtype'];
-
+			$vtype = $_POST['vtype'];
+			 
 			$sql2 = "SELECT COUNT(VID) AS countVID FROM v_available WHERE v_avail='YES' AND vtype='$vtype';";
 			
 			$result=mysqli_query($conn,$sql2);
@@ -85,7 +82,7 @@ include "./conn.php"; ?>
 				
 				<div class="container">
 				
-					<h1 style="font-size:110px;padding:15px;margin:0;display:in block; text-align:center;"><?php if(isset($_REQUEST['vtype'])){echo $row['countVID'];}else{echo "0";} ?></h1>
+					<h1 style="font-size:110px;padding:15px;margin:0;display:in block; text-align:center;"><?php if(isset($_POST['vtype'])){echo $row['countVID'];}else{echo "0";} ?></h1>
 				</div>
 			</div>
 			</center>

@@ -58,10 +58,6 @@ session_start();
 						
 			</div>
 	</center>
-	
-
-
-
 
 	<?php
 $Runame = $_SESSION['uname'];
@@ -78,6 +74,7 @@ $row = mysqli_fetch_array($result);
      $sql2 = "SELECT *  FROM v_available WHERE v_avail='YES' AND vtype='$vtype';";
      
      $result2=mysqli_query($conn,$sql2);
+	 
      if (mysqli_num_rows($result2) > 0){
      $row=mysqli_fetch_assoc($result2);
      $avail_vehi=$row['VID'];

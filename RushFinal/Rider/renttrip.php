@@ -56,7 +56,7 @@ table {
                     $row = mysqli_fetch_array($result);
                     $Rid = $row['RID'];
 
-                    $sql_query = "SELECT * FROM trip_det WHERE RID='$Rid' ";
+                    $sql_query = "SELECT * FROM trip_det WHERE RID='$Rid' ORDER BY trip_date DESC; ";
                     $result2 = mysqli_query($conn, $sql_query);
                     while ($row = mysqli_fetch_assoc($result2)) { 
                         $did=$row['DID'];
