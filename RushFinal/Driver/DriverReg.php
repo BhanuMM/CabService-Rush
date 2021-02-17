@@ -28,35 +28,35 @@
 <tr>
 <td>
 NIC:</td><td>
-<input type="text" id="Dnic" name="Dnic" size=12 placeholder="NIC number..."><br /></td></tr>
+<input type="text" id="Dnic" name="Dnic" size=12 placeholder="NIC number..." required> <br /></td></tr>
 <tr>
 <td>
 First Name:</td><td>
-<input type="text" id="Dfname" name="Dfname" size=15 placeholder="First name..."><br /></td></tr>
+<input type="text" id="Dfname" name="Dfname" size=15 placeholder="First name..." required><br /></td></tr>
 <tr>
 <td>
 Last Name:</td><td>
-<input type="text" id="Dlname" name="Dlname" size=20 placeholder="Last name..."><br /></td></tr>
+<input type="text" id="Dlname" name="Dlname" size=20 placeholder="Last name..." required><br /></td></tr>
 <tr>
 <td>
 Contact Number:</td><td>
-<input type="text" id="Dtelno" name="Dtelno" size=10 placeholder="Contact number..."><br /></td></tr>
+<input type="text" id="Dtelno" name="Dtelno" size=10 placeholder="Contact number..." required><br /></td></tr>
 <tr>
 <td>
 License Number:</td><td>
-<input type="text" id="Daddress" name="Dlicno" size=50 placeholder="License Number..."><br /></td></tr>
+<input type="text" id="Daddress" name="Dlicno" size=50 placeholder="License Number..." required ><br /></td></tr>
 <tr>
 <td>
 Email:</td><td>
-<input type="text" id="Demail" name="Demail" size=40 placeholder="Email address..."><br /></td></tr>
+<input type="text" id="Demail" name="Demail" size=40 placeholder="Email address..." required><br /></td></tr>
 <tr>
 <td>
 Username:</td><td>
-<input type="text" id="Duname" name="Duname" size=40 placeholder="Username..."><br /></td></tr>
+<input type="text" id="Duname" name="Duname" size=40 placeholder="Username..." required><br /></td></tr>
 <tr>
 <td>
 Password:</td><td>
-<input type="password" id="Dpass" name="Dpass" minlength="8" placeholder="***********"></td></tr>
+<input type="password" id="Dpass" name="Dpass" minlength="4" placeholder="***********" required></td></tr>
 
 </table>
 
@@ -80,15 +80,15 @@ Vehicle Type:</td><td>
 <tr>
 <td>
 Vehicle Brand:</td><td>
-<input type="text" id="Vbrand" name="Vbrand" placeholder="Vehicle Brand..." style=" width:112%;"><br /></td></tr>
+<input type="text" id="Vbrand" name="Vbrand" placeholder="Vehicle Brand..." style=" width:112%;" required><br /></td></tr>
 <tr>
 <td>
 Vehicle Model:</td><td>
-<input type="text" id="Vmodel" name="Vmodel" placeholder="Vehicle Model..." style=" width:112%;"><br /></td></tr>
+<input type="text" id="Vmodel" name="Vmodel" placeholder="Vehicle Model..." style=" width:112%;" required><br /></td></tr>
 <tr>
 <td>
 Vehicle Number:</td><td>
-<input type="text" id="Vnumber" name="Vnumber" placeholder="Vehicle Number..." style=" width:112%;"><br /></td></tr>
+<input type="text" id="Vnumber" name="Vnumber" placeholder="Vehicle Number..." style=" width:112%;" required><br /></td></tr>
 </table>
 
 <input type="reset" value="Refresh">
